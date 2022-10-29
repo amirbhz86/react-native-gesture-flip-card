@@ -161,7 +161,7 @@ const GestureFlipView = React.forwardRef((props, ref) => {
     isAnimating.current = true;
     Animated.timing(scrollX, {
       toValue: toValue,
-      duration: 300,
+      duration: 150,
       useNativeDriver: false,
     }).start(() => {
       isAnimating.current = false;
